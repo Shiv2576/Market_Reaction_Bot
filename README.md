@@ -1,22 +1,18 @@
-# Docus Default Starter
+# MRT — Market Reaction Trading Bot
 
-> A beautiful, minimal starter for creating documentation with Docus
+> Real-time whale-driven trading signals for Ethereum & Solana, delivered via Telegram
 
-This is the default Docus starter template that provides everything you need to build beautiful documentation sites with Markdown and Vue components.
+MRT is a self-hosted, privacy-first trading signal engine that monitors Bitcoin whale activity on **Mempool.Space** and predicts short-term price impact on **Ethereum** and **Solana**. Signals are delivered instantly to Telegram—no cloud dependencies, no KYC, no noise.
 
-> [!TIP]
-> If you're looking for i18n support, check out the [i18n starter](https://github.com/nuxt-themes/docus/tree/main/.starters/i18n).
+## ✨ Core Features
 
-## ✨ Features
-
-- 🎨 **Beautiful Design** - Clean, modern documentation theme
-- 📱 **Responsive** - Mobile-first responsive design  
-- 🌙 **Dark Mode** - Built-in dark/light mode support
-- 🔍 **Search** - Full-text search functionality
-- 📝 **Markdown Enhanced** - Extended markdown with custom components
-- 🎨 **Customizable** - Easy theming and brand customization
-- ⚡ **Fast** - Optimized for performance with Nuxt 4
-- 🔧 **TypeScript** - Full TypeScript support
+- 🤖 **Telegram-native alerts** – Structured signals with entry, target, stop-loss, and chain context  
+- 🐋 **Whale transaction detection** – Real-time scraping of >100 BTC moves from Mempool.Space  
+- 📊 **Cross-chain impact modeling** – Maps BTC whale behavior to ETH/SOL volatility using on-chain lags & DEX flows  
+- 🎯 **Confidence scoring** – Dynamic signal reliability based on historical correlation and market regime  
+- 🔌 **Modular engine** – Extend logic in **Go** or **TypeScript** (e.g., Uniswap V3 liquidity, Chainlink oracles)  
+- 💾 **Offline-first & self-hosted** – Runs entirely on your infrastructure; state persisted via `better-sqlite3`  
+- 🌙 **Dark-mode documentation** – Clean, minimal docs (black background, off-white text) powered by **Docus + Nuxt 4**
 
 ## 🚀 Quick Start
 
@@ -24,49 +20,5 @@ This is the default Docus starter template that provides everything you need to 
 # Install dependencies
 npm install
 
-# Start development server
+# Start dev server (docs + signal formatting layer)
 npm run dev
-```
-
-Your documentation site will be running at `http://localhost:3000`
-
-## 📁 Project Structure
-
-```
-my-docs/
-├── content/              # Your markdown content
-│   ├── index.md         # Homepage
-│   ├── 1.getting-started/  # Getting started section
-│   └── 2.essentials/    # Essential documentation
-├── public/              # Static assets
-└── package.json         # Dependencies and scripts
-```
-
-## ⚡ Built with
-
-This starter comes pre-configured with:
-
-- [Nuxt 4](https://nuxt.com) - The web framework
-- [Nuxt Content](https://content.nuxt.com/) - File-based CMS
-- [Nuxt UI](https://ui.nuxt.com) - UI components
-- [Nuxt Image](https://image.nuxt.com/) - Optimized images
-- [Tailwind CSS 4](https://tailwindcss.com/) - Utility-first CSS
-- [Docus Layer](https://www.npmjs.com/package/docus) - Documentation theme
-
-## 📖 Documentation
-
-For detailed documentation on customizing your Docus project, visit the [Docus Documentation](https://docus.dev)
-
-## 🚀 Deployment
-
-Build for production:
-
-```bash
-npm run build
-```
-
-The built files will be in the `.output` directory, ready for deployment to any hosting provider that supports Node.js.
-
-## 📄 License
-
-[MIT License](https://opensource.org/licenses/MIT) 
